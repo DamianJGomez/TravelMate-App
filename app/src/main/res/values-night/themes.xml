@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.TravelMate" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#B87CFF</item>      <!-- Morado más claro para botones -->
+        <item name="colorPrimaryVariant">#9B59B6</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#FF7043</item>
+        <item name="colorSecondaryVariant">#FF7043</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <!-- Fondo morado oscuro -->
+        <item name="android:windowBackground">#1A0F2E</item>
+        <item name="android:statusBarColor">#0D0717</item>
+
+        <!-- TEXTOS PRINCIPALES EN BLANCO (legibles) -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#D0C0E8</item>
+
+        <!-- Texto de títulos -->
+        <item name="android:textColorPrimaryInverse">#FFFFFF</item>
+
+        <!-- Estilo de texto más grueso -->
+        <item name="android:textViewStyle">@style/BoldTextView</item>
+
+        <!-- Botón ATRÁS con fondo visible -->
+        <item name="android:navigationBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="BoldTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>

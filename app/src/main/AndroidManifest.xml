@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TravelMate">
+
+        <!-- Pantalla de bienvenida (LAUNCHER) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TravelMate">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Pantalla principal (después del login) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Resto de actividades -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ListaVuelosActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".DetalleVueloActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ReservaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".HistorialActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SelectorAsientoActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".DetalleTicketActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

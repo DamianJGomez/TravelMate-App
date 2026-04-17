@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/windowBackground">
+
+    <Button
+        android:id="@+id/btnAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Atrás"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar reserva"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"
+        android:gravity="center"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/tvVuelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vuelo: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvPasajero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pasajero: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvAsiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Asiento: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/success"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Servicios adicionales"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:id="@+id/llAddons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio total: $"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnElegirAsiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elegir asiento"
+        android:backgroundTint="@color/warning"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        app:cornerRadius="20dp"/>
+
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar reserva"
+        android:backgroundTint="@color/success"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        app:cornerRadius="20dp"/>
+
+</LinearLayout>

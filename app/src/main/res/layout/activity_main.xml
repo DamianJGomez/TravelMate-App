@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="?android:attr/windowBackground"
+    android:padding="24dp">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="48dp"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="Logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TravelMate"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu compañero de viaje"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorSecondary"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/btnVuelos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="✈️ Vuelos Disponibles"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="@color/error"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnMisVuelos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 Mis Vuelos"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="@color/warning"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👤 Mi Perfil"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="@color/accent"
+        android:textColor="@color/white"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔒 Cerrar sesión"
+        android:textSize="14sp"
+        android:backgroundTint="@color/error"
+        android:textColor="@color/white"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
